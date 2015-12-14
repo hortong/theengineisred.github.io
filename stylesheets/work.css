@@ -1,0 +1,47 @@
+/************************
+    OUR WORK
+*************************/
+/* line 7, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/work.css.scss */
+.work {
+  background-color: white; }
+
+/* line 11, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/work.css.scss */
+.work.hero {
+  background: url("http://res.cloudinary.com/the-engine-is-red/image/upload/v1449273346/engine-site/ourwork_bg.jpg") no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover; }
+
+/* line 16, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/work.css.scss */
+.how-we-work {
+  color: black;
+  line-height: 1.8;
+  max-width: 1000px;
+  margin: auto; }
+
+/* line 23, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/work.css.scss */
+.blue {
+  background-color: #00AEEF;
+  padding: 10em; }
+
+/* line 28, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/work.css.scss */
+.client-logos {
+  margin: 6em auto;
+  text-align: center; }
+  /* line 31, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/work.css.scss */
+  .client-logos h2 {
+    color: #000;
+    font-weight: bold; }
+
+/* line 37, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/work.css.scss */
+.client-list {
+  color: black;
+  line-height: 1.8;
+  max-width: 1000px;
+  margin: 0 auto 6em auto;
+  padding-left: 10em;
+  -webkit-column-count: 3;
+  /* Chrome, Safari, Opera */
+  -moz-column-count: 3;
+  /* Firefox */
+  column-count: 3; }

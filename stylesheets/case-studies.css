@@ -1,0 +1,89 @@
+/* line 4, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/case-studies.css.scss */
+.case-study {
+  font-family: helvetica;
+  background-color: white;
+  color: #000; }
+  /* line 9, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/case-studies.css.scss */
+  .case-study .hero .arrow {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 1em;
+    z-index: 1; }
+    /* line 15, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/case-studies.css.scss */
+    .case-study .hero .arrow img {
+      display: block;
+      height: 5em;
+      margin: 0 auto;
+      width: 5em; }
+  /* line 22, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/case-studies.css.scss */
+  .case-study .hero hgroup {
+    z-index: 1;
+    text-transform: none;
+    padding: 1em 4em;
+    color: #fff; }
+    /* line 27, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/case-studies.css.scss */
+    .case-study .hero hgroup h1, .case-study .hero hgroup h3 {
+      font-weight: 600;
+      text-transform: none;
+      font-size: 2.8em;
+      padding-bottom: .3em; }
+    /* line 33, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/case-studies.css.scss */
+    .case-study .hero hgroup h2, .case-study .hero hgroup h4 {
+      text-transform: none;
+      font-size: 2em; }
+  /* line 39, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/case-studies.css.scss */
+  .case-study .image-block img {
+    width: 100%; }
+  /* line 43, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/case-studies.css.scss */
+  .case-study .half, .case-study .third, .case-study .quarter, .case-study .fifth, .case-study .two-thirds {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    /* line 45, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/case-studies.css.scss */
+    .case-study .half img, .case-study .third img, .case-study .quarter img, .case-study .fifth img, .case-study .two-thirds img {
+      width: 100%;
+      height: auto; }
+
+@media only screen and (min-width: 1024px) {
+  /* line 54, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/case-studies.css.scss */
+  #case-study .main-content-area {
+    width: 1000px;
+    margin: auto; }
+  /* line 58, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/case-studies.css.scss */
+  #case-study .hero {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center; }
+  /* line 62, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/case-studies.css.scss */
+  #case-study .hero:not(.next-story) {
+    height: 75vh; }
+    /* line 64, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/case-studies.css.scss */
+    #case-study .hero:not(.next-story) hgroup {
+      position: relative;
+      top: 6em; }
+  /* line 69, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/case-studies.css.scss */
+  #case-study .next-story {
+    height: 45vh; }
+  /* line 72, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/case-studies.css.scss */
+  #case-study .half {
+    width: 50%; }
+  /* line 76, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/case-studies.css.scss */
+  #case-study .dual-photos > div {
+    overflow: hidden;
+    height: 40em; }
+    /* line 79, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/case-studies.css.scss */
+    #case-study .dual-photos > div:first-child {
+      padding-right: 2em; }
+    /* line 82, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/case-studies.css.scss */
+    #case-study .dual-photos > div img {
+      min-height: 100%;
+      min-width: 100%; }
+  /* line 88, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/case-studies.css.scss */
+  #case-study .full-image {
+    max-height: 75em;
+    overflow: hidden; }
+  /* line 92, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/case-studies.css.scss */
+  #case-study .content-band {
+    padding: 5em 0; } }

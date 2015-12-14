@@ -1,0 +1,262 @@
+/*
+Home Stylesheet
+
+URL: 				http://theengineisred.com/
+Created by: 		Mike Rusczyk / Will McCurry
+For:				The Engine is Red
+Site Design by:		The Engine is Red
+
+*/
+
+
+body {
+	background-color: #000;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+	}				
+		
+a {
+	text-decoration: none;
+	color: #fff;
+	}
+	
+	a:focus {
+		outline-style: none;
+		}
+		
+li.choice {
+	text-align: center;
+	width: 33.333%;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	z-index: 2;
+	text-align: center;
+	overflow: hidden;
+	}
+	
+	li.choice a {
+		letter-spacing: 2px;
+		width: 150px;
+		top: 50%;
+		left: 50%;
+		position: absolute;
+		z-index: 3;
+		padding: 30px 0 60px;
+		margin: -55px 0 0 -75px;
+		}
+		
+		li.choice a:before {
+			content: "";
+			display: block;
+			top: 75px;
+			left: 50%;
+			position: absolute;
+			width: 11px;
+			height: 11px;
+			border: 3px solid #fff;
+			margin-left: -8px;
+			background-color: #00aeef;
+			
+			-moz-border-radius: 50%; 
+  			border-radius: 50%; 
+			}
+			
+			li.choice a:before {
+				background-color: #00aeef;
+				}
+			
+			li.choice.bravo a:before {
+				background-color: #ec008c;
+				}	
+				
+			li.choice.charlie a:before {
+				background-color: #fff200;
+				}
+				
+			li.choice.charlie a:hover {
+				color: #000;
+				}	
+
+		li.choice a h2 {
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			margin-bottom: 50px;
+			font-size: 22px;
+			}		
+				
+			li.choice a p {
+				font-size: 17px;
+				opacity: .0;
+				bottom: -9009%;
+				left: -9009%;
+				position: absolute;
+				width: 400px;
+				margin-left: -200px;
+				line-height: 1.2;
+				
+				transition: opacity 310ms;
+   				-o-transition: opacity 310ms;
+   				-moz-transition: opacity 310ms;
+   				-webkit-transition: opacity 310ms;
+				}
+				
+				li.choice.charlie a:hover:before {
+					border-color: #000;
+					}
+				
+				li.choice a:hover img {
+					opacity: 1;
+					left: 50%;
+					padding-bottom: 30px;
+					}
+				
+				li.choice a:hover p {
+					opacity: 1;
+					top: 110px;
+					left: 50%;
+					}
+					
+	li.choice img {
+		top: -120px;
+		left: 9909%;
+		position: absolute;
+		margin-left: -39px;
+		opacity: .0;
+		
+		transition: opacity 300ms;
+		-o-transition: opacity 300ms;
+		-moz-transition: opacity 300ms;
+		-webkit-transition: opacity 300ms;
+		}
+		
+	li.choice.bravo img {
+		top: -80px;
+		margin-left: -70px;
+		}	
+		
+	li.choice.charlie img {
+		top: -120px;
+		margin-left: -52px;
+		}						
+					
+		li.choice span {
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			position: absolute;
+			z-index: 1;
+			display: block;
+			text-indent: -9909px;
+			
+			transition: background-color 300ms ease;
+   			-o-transition: background-color 300ms ease;
+   			-moz-transition: background-color 300ms ease;
+   			-webkit-transition: background-color 300ms ease;
+			}
+			
+				li.choice a:hover + span {
+					background-color: #00aeef;
+					}
+				
+				li.choice.bravo a:hover + span {
+					background-color: #ec008c;
+					}
+					
+				li.choice.charlie a:hover + span {
+					background-color: #fff200;
+					}	
+	
+li.choice.bravo {
+	left: 33.333%;
+	}	
+	
+li.choice.charlie {
+	left: 66.666%;
+	}
+
+
+/* ~ ~ ~ ~ Media Quires ~ ~ ~ ~ */
+
+					
+
+/* ----- Very Very Large screens ----- */	
+@media only screen and (min-width: 2200px) {
+
+}
+
+
+/* ----- Standard screens ----- */	
+@media only screen and (max-width: 1100px) {
+	
+		li.choice a p {
+			width: 250px;
+			margin-left: -125px;
+			}
+
+}	
+
+
+/* ----- Tablets ----- */
+@media only screen and (max-width: 900px) {
+
+}
+
+
+/* ----- Small devices ----- */
+@media only screen and (max-width: 700px) {
+	
+	/*#content ul {
+		position: static;
+		}*/
+	
+	li.choice {
+		position: static;
+		width: 100%;
+		margin: 0;
+		padding: 150px 0 50px;
+		}
+		
+		li.choice a {
+			position: relative;
+			left: auto;
+			top: auto;
+			margin: 0;
+			width: auto;
+			padding: 30px 10px;
+			}
+			
+			li.choice a:before {
+				top: 90px;
+				}
+				
+				li.choice a:hover {
+					color: #fff;
+					} 
+					
+				li.choice.charlie a:hover, li.choice.charlie a:hover p {
+					color: #000;
+					}
+			
+			li.choice a p {
+				color: #fff;
+				position: static;
+				width: auto;
+				margin: 0 auto;
+				opacity: 1;
+				font-size: 14px;
+				padding: 0 20px;
+				}
+					
+		li.choice img {
+			display: none;
+			}			
+
+}	
+	
+
+/* ----- iPhone 4 / High density screens ----- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+
+}

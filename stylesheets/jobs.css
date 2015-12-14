@@ -1,0 +1,831 @@
+/*
+Jobs Page Stylesheet
+
+URL:        http://theengineisred.com/jobs
+Created by:     Miranda Limonczenko
+For:        The Engine is Red
+Site Design by:   The Engine is Red
+
+*/
+/* ----- Job Page Hacks (overrides) ----- */
+/* line 13, ../sass/jobs.scss */
+
+body.jobs {
+  background-color: #FFF;
+}
+
+/* line 17, ../sass/jobs.scss */
+.jobs .url-textfield {
+  display: none;
+}
+
+/* line 21, ../sass/jobs.scss */
+.jobs h1 a {
+  display: none;
+}
+
+/* line 25, ../sass/jobs.scss */
+.jobs #content {
+  margin: 0;
+}
+
+/* line 29, ../sass/jobs.scss */
+.jobs #content a {
+  color: #00AEEF;
+  border-bottom: none;
+}
+
+/* line 34, ../sass/jobs.scss */
+.jobs #content p a:hover {
+  border-bottom: #00AEEF 1px solid;
+  color: #00AEEF;
+}
+
+/* line 38, ../sass/jobs.scss */
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #fff;
+}
+
+/* line 41, ../sass/jobs.scss */
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+}
+
+/* line 44, ../sass/jobs.scss */
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #fff;
+}
+
+/* line 47, ../sass/jobs.scss */
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #fff;
+}
+
+/* ----- Job Page ----- */
+/* line 53, ../sass/jobs.scss */
+.jobs {
+  margin-top: 72px;
+}
+
+/* line 57, ../sass/jobs.scss */
+.jobs #content footer p {
+  text-align: center !important;
+}
+
+/* line 62, ../sass/jobs.scss */
+.jobs #alpha-navigation li a {
+  color: #000;
+  border-bottom: none;
+  line-height: 1.5em;
+  padding: 23px;
+}
+
+/* line 69, ../sass/jobs.scss */
+.jobs #alpha-navigation li a:hover, .job-content #alpha-navigation li a.current {
+  background-color: yellow;
+  color: #000;
+}
+
+/* line 74, ../sass/jobs.scss */
+.job-content #alpha-navigation {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 500;
+}
+
+/* line 83, ../sass/jobs.scss */
+#culture {
+  margin: 0px 0px;
+}
+
+/* line 87, ../sass/jobs.scss */
+.jobs iframe {
+  position: relative;
+}
+
+/* --- General ---- */
+/* line 93, ../sass/jobs.scss */
+.jobs #wrapper {
+  padding: 0px;
+}
+
+/* line 97, ../sass/jobs.scss */
+.jobs #content ul {
+  margin: 0px;
+}
+
+/* line 102, ../sass/jobs.scss */
+.jobs #content ul li {
+  list-style-type: none;
+}
+
+/* line 106, ../sass/jobs.scss */
+.jobs h2 {
+  text-align: center;
+}
+
+/* line 110, ../sass/jobs.scss */
+.jobs #site-sections {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1500 !important;
+}
+
+/* line 117, ../sass/jobs.scss */
+.jobs .job-content p {
+  margin: 0 auto;
+}
+
+/* line 121, ../sass/jobs.scss */
+.jobs #content {
+  max-width: none !important;
+  padding: 0px !important;
+}
+
+/* ----- Top Banner ----- */
+/* line 129, ../sass/jobs.scss */
+.about.hero {
+  background: url('http://res.cloudinary.com/the-engine-is-red/image/upload/v1449081705/engine-site/alpha-jobs-hero.jpg')no-repeat;
+  background-size: cover;
+}
+
+/* line 135, ../sass/jobs.scss */
+.job-banner .banner {
+  width: 100%;
+  position: relative;
+}
+
+/* line 160, ../sass/jobs.scss */
+.job-banner h2 span {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ------ Introduction Section ----- */
+.introduction {
+  background-color: #00AEEF;
+  text-align: left;
+}
+
+/* line 176, ../sass/jobs.scss */
+#call-to-action p {
+  line-height: 2.8;
+  letter-spacing: 1px;
+  font-size: 24px !important;
+  text-transform: uppercase;
+  text-align: center !important;
+  max-width: 1200px;
+  padding: 140px 20px 100px;
+  margin: 0px auto;
+  font-weight: 100;
+}
+
+/* line 188, ../sass/jobs.scss */
+.jobs .introduction:before {
+  top: -70px;
+  left: 0px;
+  right: 0px;
+  position: absolute;
+  height: 80px;
+  content: "";
+  display: block;
+  background: url("/sites/default/files/alpha/general/downarrow-reverse.png") no-repeat scroll center top transparent;
+  z-index: 200;
+}
+
+/* line 200, ../sass/jobs.scss */
+.jobs .introduction, .jobs h2 {
+  margin: 0px auto;
+  text-align: center;
+}
+
+/* ------ Studio ------- */
+/* line 207, ../sass/jobs.scss */
+.jobs .overlay {
+  background: transparent;
+  position: relative;
+  width: 100%;
+  height: 520px;
+  top: 520px;
+  margin-top: -520px;
+  z-index: 100;
+}
+
+/* ------ Instagram ------- */
+/* line 220, ../sass/jobs.scss */
+#instagram {
+  background-color: #000;
+  color: #FFF;
+  height: 55em;
+  padding: 5em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.insta-grid {
+  margin: 0 auto;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 234, ../sass/jobs.scss */
+#instagram h2 {
+  color: #FFF;
+  font-size: 3em;
+  margin-bottom: 2em;
+}
+
+/* line 246, ../sass/jobs.scss */
+#instagram .intagme p {
+  text-align: center;
+}
+
+/* ------- Mix Tape Section -------- */
+/* line 252, ../sass/jobs.scss */
+#mixtape {
+  height: 55em;
+  display: flex;
+  padding: 5em;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* line 258, ../sass/jobs.scss */
+#mixtape h2 {
+  clear: both;
+  color: #00AEEF;
+  font-size: 36px;
+  margin: 30px 0;
+  text-align: center;
+}
+
+/* line 265, ../sass/jobs.scss */
+#mixtape h2 img, #instagram h2 img {
+  display: inline;
+  text-align: center;
+}
+
+/* line 270, ../sass/jobs.scss */
+#mixtape p {
+  max-width: 880px;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 50px;
+  line-height: 1.7em;
+  color: #000;
+}
+
+/* line 279, ../sass/jobs.scss */
+#mixtape .tape {
+  float: left;
+  margin-left: 40px;
+}
+
+/* line 284, ../sass/jobs.scss */
+#mixtape .tape:first-child {
+  margin-left: 0px;
+}
+
+/* ------ Sonoma County Section ------ */
+
+/* line 295, ../sass/jobs.scss */
+#sonoma-county a {
+  border-bottom: none;
+  color: #00AEEF;
+}
+
+/* line 300, ../sass/jobs.scss */
+#sonoma-county a:hover {
+  border-bottom: 1px solid #00AEEF;
+}
+
+/* line 377, ../sass/jobs.scss */
+.jobs #sonoma-county .benefits-slideshow {
+  position: relative;
+}
+
+/* line 381, ../sass/jobs.scss */
+.jobs #sonoma-county img {
+  width: 100%;
+  opacity: .52;
+  min-height: 500px;
+}
+
+/* line 388, ../sass/jobs.scss */
+.jobs #sonoma-county .benefits-slideshow li {
+  max-height: 800px;
+  min-height: 500px;
+  position: absolute;
+  overflow: hidden;
+  background-color: #000;
+  max-height: 550px;
+  margin: 0px;
+  top: 0;
+  right: 0;
+  left: 0;
+  opacity: .0;
+  transition: all 800ms ease;
+  -o-transition: all 800ms ease;
+  -moz-transition: all 800ms ease;
+  -webkit-transition: all 800ms ease;
+}
+
+/* line 407, ../sass/jobs.scss */
+.jobs #sonoma-county .benefits-slideshow .active {
+  z-index: 200;
+  opacity: 1;
+}
+
+/* line 412, ../sass/jobs.scss */
+.jobs #sonoma-county .benefits-slideshow li:first-child {
+  position: relative;
+}
+
+/* line 416, ../sass/jobs.scss */
+.jobs #sonoma-county .slide-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  right: 0px;
+  left: 0px;
+  color: #FFF;
+  padding: 75px 20px;
+  max-width: 915px;
+  margin: 0 auto;
+}
+
+/* ------ Job Openings ----- */
+/* line 448, ../sass/jobs.scss */
+.jobs #openings p {
+  text-align: justify;
+  font-size: 16px;
+}
+
+/* line 453, ../sass/jobs.scss */
+#openings h2 {
+  padding: 30px 0px;
+  transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -webkit-transition: all 200ms ease;
+}
+
+/* line 463, ../sass/jobs.scss */
+#openings .job-posting h2:hover {
+  background-color: #EEE;
+}
+
+/* line 467, ../sass/jobs.scss */
+#openings .desc {
+  background-color: #000;
+  color: #FFF;
+  text-align: left;
+  padding: 30px 0;
+}
+
+/* line 479, ../sass/jobs.scss */
+#openings .desc-text p, #openings .desc-text ul, #openings .desc.text ol {
+  margin-bottom: 25px;
+}
+
+/* line 483, ../sass/jobs.scss */
+#openings .desc-text h4 {
+  margin-bottom: 10px;
+}
+
+/* line 487, ../sass/jobs.scss */
+#openings .desc li {
+  font-size: 1.8em;
+  margin-left: 50px;
+  position: relative;
+}
+
+/* line 492, ../sass/jobs.scss */
+#openings .desc ul li:before {
+  display: inline;
+  position: relative;
+  content: "+ ";
+  margin-right: 5px;
+}
+
+/* line 499, ../sass/jobs.scss */
+#openings .opening-desc-hidden {
+  display: none;
+}
+
+/* line 503, ../sass/jobs.scss */
+#openings a.apply-for-job {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 35px;
+  color: #FFF;
+  font-size: 18px;
+  padding-top: 12px;
+  text-transform: uppercase;
+  background-color: #00AEEF;
+  margin-top: 33px;
+}
+
+/* line 516, ../sass/jobs.scss */
+#openings a.apply-for-job:hover {
+  background-color: #FFF;
+  color: #00AEEF;
+}
+
+/* line 521, ../sass/jobs.scss */
+.jobs #content h3 {
+  margin: 40px 0px 10px !important;
+}
+
+/* ----- Contact Form / Call to Action ---- */
+/* line 527, ../sass/jobs.scss */
+#jobs-contact {
+  background: url("images/alpha-google-map.jpg") no-repeat scroll center top #E4E4E4;
+  min-height: 550px;
+  position: relative;
+}
+
+/* line 533, ../sass/jobs.scss */
+#jobs-contact abbr {
+  display: none;
+}
+
+/* line 537, ../sass/jobs.scss */
+#jobs-contact textarea {
+  max-height: 200px;
+  max-width: 450px;
+}
+
+/* line 542, ../sass/jobs.scss */
+#jobs-contact a.geo {
+  width: 47px;
+  height: 31px;
+  margin-left: -2px;
+  top: 258px;
+  left: 50%;
+  position: absolute;
+  display: block;
+  background: url("images/alpha-google-map-pin.png") no-repeat scroll 0px 0px transparent;
+  transition: none 0s ease 0s;
+  border-bottom: none;
+}
+
+/* line 555, ../sass/jobs.scss */
+#jobs-contact a.geo:hover {
+  background: url("images/alpha-google-map-pin.png") no-repeat scroll 0px -32px transparent;
+  border-bottom: none;
+}
+
+/* line 560, ../sass/jobs.scss */
+#jobs-contact #contact-form {
+  float: right;
+}
+
+/* line 564, ../sass/jobs.scss */
+#jobs-contact #call-to-action {
+  max-width: 480px;
+  background-color: #00AEEF;
+  position: relative;
+  padding: 25px;
+  color: #FFF;
+  float: left;
+}
+
+/* line 573, ../sass/jobs.scss */
+#jobs-contact #call-to-action p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.9em;
+  font-weight: 200;
+}
+
+/* line 582, ../sass/jobs.scss */
+#jobs-contact .contact-content {
+  max-width: 1200px;
+  padding: 125px 0;
+  margin: 0 auto;
+}
+
+/* line 588, ../sass/jobs.scss */
+#jobs-contact #call-to-action a {
+  color: #FFF;
+  border-bottom: none;
+}
+
+/* line 593, ../sass/jobs.scss */
+#jobs-contact #call-to-action a:hover {
+  border-bottom: 1px solid #FFF;
+}
+
+/* line 597, ../sass/jobs.scss */
+#jobs-contact #call-to-action h2 {
+  color: #FFF;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 30px;
+  letter-spacing: 0px;
+}
+
+/* line 607, ../sass/jobs.scss */
+#jobs-contact address {
+  font-style: normal;
+  margin-top: 25px;
+}
+
+/* line 612, ../sass/jobs.scss */
+#jobs-contact #contact-form {
+  background-color: #00AEEF;
+  padding: 18px;
+  width: 480px;
+}
+
+/* line 618, ../sass/jobs.scss */
+#jobs-contact #contact-form label {
+  display: none;
+}
+
+/* line 622, ../sass/jobs.scss */
+#jobs-contact #contact-form input {
+  width: 200px;
+}
+
+/* line 626, ../sass/jobs.scss */
+#jobs-contact #contact-form input, #jobs-contact #contact-form input[placeholder], #jobs-contact #contact-form textarea, #jobs-contact #contact-form select {
+  padding: 13px;
+  font-size: 24px;
+  border: 1px solid #FFF;
+  margin-top: 15px;
+  color: #FFF;
+  background-color: #00AEEF;
+  font-weight: 100;
+  font-family: "proxima-nova","helvetica neue",arial,sans-serif;
+}
+
+/* line 637, ../sass/jobs.scss */
+#jobs-contact #contact-form select {
+  clear: both;
+  border-color: #FFF;
+  width: 100%;
+  color: #FFF;
+  display: block;
+  height: 55px;
+}
+
+/* line 646, ../sass/jobs.scss */
+#jobs-contact input:first-child {
+  float: right;
+}
+
+/* line 650, ../sass/jobs.scss */
+#jobs-contact input:nth-child(2) {
+  float: left;
+  margin-right: 18px;
+}
+
+/* line 655, ../sass/jobs.scss */
+#jobs-contact #contact-form textarea {
+  width: 100%;
+  height: 63px;
+}
+
+/* line 660, ../sass/jobs.scss */
+#jobs-contact input[type="submit"] {
+  background-color: #FFF !important;
+  color: #00AEEF !important;
+  width: 100% !important;
+}
+
+/* line 666, ../sass/jobs.scss */
+.jobs #response {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #FFF;
+  width: 515px;
+  float: right;
+  background-color: #00AEEF;
+  font-weight: 100;
+  font-family: "proxima-nova","helvetica neue",arial,sans-serif;
+}
+
+/* line 677, ../sass/jobs.scss */
+#jobs-contact input[type="submit"]:hover {
+  opacity: .7;
+}
+
+/* ---------- The RESPONSIVE Corner ----------- */
+@media only screen and (max-width: 1050px) {
+  /* line 686, ../sass/jobs.scss */
+  .jobs #jobs-contact #contact-form, #jobs-contact #call-to-action {
+    width: 100%;
+    max-width: none;
+  }
+
+  /* line 691, ../sass/jobs.scss */
+  #jobs-contact #call-to-action {
+    padding: 100px 25px 0px 25px;
+  }
+
+  /* line 695, ../sass/jobs.scss */
+  .insta-grid {
+    max-width: 85%;
+  }
+
+  /* line 699, ../sass/jobs.scss */
+  .jobs #jobs-contact #contact-form textarea, .jobs #jobs-contact #contact-form select, .jobs #jobs-contact #contact-form input {
+    width: 90%;
+    max-width: 90%;
+    margin-left: 5%;
+  }
+
+  /* line 705, ../sass/jobs.scss */
+  .jobs #jobs-contact #contact-form select {
+    width: 93%;
+    max-width: 93%;
+  }
+
+  /* line 710, ../sass/jobs.scss */
+  .jobs #contact-form #mc-embedded-subscribe {
+    width: 100%;
+  }
+
+  /* line 713, ../sass/jobs.scss */
+  #mixtape .tape, #instagram .intagme {
+    margin-left: 15px;
+  }
+
+  /* line 717, ../sass/jobs.scss */
+  .jobs #jobs-contact .contact-content {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* ----- Handheld devices ----- */
+  /* line 727, ../sass/jobs.scss */
+  .jobs {
+    margin-top: 0px;
+  }
+
+  /* line 731, ../sass/jobs.scss */
+  .jobs #content p {
+    font-size: 90% !important;
+  }
+
+  /* line 735, ../sass/jobs.scss */
+  .jobs .job-banner {
+    max-height: 280px;
+    overflow: hidden;
+  }
+
+  /* line 740, ../sass/jobs.scss */
+  .jobs .job-banner .banner {
+    width: 800px;
+  }
+
+  /* line 744, ../sass/jobs.scss */
+  .jobs .job-banner h2 {
+    font-size: 25px;
+  }
+
+  /* line 749, ../sass/jobs.scss */
+  .jobs #instagram .intagme, .jobs #mixtape .tape {
+    float: none;
+    margin: 20px auto;
+    max-width: 245px;
+  }
+
+  /* line 755, ../sass/jobs.scss */
+  .jobs #mixtape .tape {
+    max-width: 300px;
+  }
+
+  /* line 759, ../sass/jobs.scss */
+  .jobs #instagram img {
+    margin: 0px auto;
+  }
+
+  /* line 763, ../sass/jobs.scss */
+  .jobs #instagram p {
+    text-align: center;
+  }
+
+  /* line 767, ../sass/jobs.scss */
+  .jobs #alpha-navigation {
+    display: none;
+  }
+
+  /* line 773, ../sass/jobs.scss */
+  .jobs #content {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  /* line 778, ../sass/jobs.scss */
+  .jobs #openings .desc-text {
+    max-width: 290px;
+  }
+
+  /* ----- Slide Show ------ */
+  /* line 784, ../sass/jobs.scss */
+  .jobs #sonoma-county ul li {
+    overflow: visible;
+    background-color: transparent;
+    padding: 0px;
+    height: none;
+    position: relative;
+  }
+
+  /* line 792, ../sass/jobs.scss */
+  .jobs #sonoma-county .slide-content {
+    padding: 0px;
+    margin: 0px;
+    color: #000;
+    background-color: transparent;
+  }
+
+  /* line 799, ../sass/jobs.scss */
+  .jobs #sonoma-county img {
+    width: 1600px;
+  }
+
+  /* line 803, ../sass/jobs.scss */
+  .jobs #sonoma-county .prev {
+    background: url("/sites/default/files/alpha/general/sonoma-county-slides/left-arrow.png") no-repeat right center;
+    width: 65px;
+    height: 60px;
+    left: -20px;
+    top: 450px;
+  }
+
+  /* line 811, ../sass/jobs.scss */
+  .jobs #sonoma-county .prev:hover {
+    background: url("/sites/default/files/alpha/general/sonoma-county-slides/left-arrow-over.png") no-repeat right center;
+  }
+
+  /* line 815, ../sass/jobs.scss */
+  #sonoma-county .next {
+    background: url("/sites/default/files/alpha/general/sonoma-county-slides/rightarrow.png") no-repeat left center;
+    width: 65px;
+    height: 133px;
+    right: 0px;
+    top: 450px;
+  }
+
+  /* line 823, ../sass/jobs.scss */
+  #sonoma-county .next:hover {
+    background: url("/sites/default/files/alpha/general/sonoma-county-slides/rightarrow-over.png") no-repeat left center;
+  }
+
+  /* line 827, ../sass/jobs.scss */
+  .jobs #sonoma-county .slide-content h2 {
+    font-size: 20px !important;
+    color: #FFF;
+  }
+
+  /* line 832, ../sass/jobs.scss */
+  .jobs #sonoma-county ul li {
+    background-color: #666;
+  }
+
+  /* line 836, ../sass/jobs.scss */
+  .jobs #sonoma-county .slide-content p {
+    font-size: 12px !important;
+    color: #FFF;
+    padding: 10px;
+  }
+
+  /* line 842, ../sass/jobs.scss */
+  #openings .desc li {
+    margin-left: 0px;
+  }
+
+  /* line 846, ../sass/jobs.scss */
+  .jobs .geo {
+    display: none !important;
+  }
+
+  /* line 849, ../sass/jobs.scss */
+  #jobs-contact #call-to-action {
+    padding: 100px 0px 0px 0px;
+  }
+}

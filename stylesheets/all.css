@@ -1,0 +1,1691 @@
+@charset "UTF-8";
+/*
+Alpha Stylesheet (Sass)
+
+URL:        http://theengineisred.com/a
+Created by:     Miranda Limonczenko / Mike Rusczyk
+For:        The Engine is Red
+Site Design by:   The Engine is Red
+
+*/
+/* line 16, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+h1, .culture h2 {
+  font-size: 7em;
+  font-weight: bold;
+  line-height: 1em;
+  margin-bottom: .2em;
+  text-transform: none; }
+
+/* line 23, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+h2 {
+  font-size: 3.2em;
+  font-weight: bold; }
+
+/* line 27, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+h3 {
+  font-size: 3em; }
+
+/* line 31, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+p.circle-arrow {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  /* line 34, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  p.circle-arrow:after {
+    background: url("http://res.cloudinary.com/the-engine-is-red/image/upload/v1449272735/engine-site/circle_arrow.svg") no-repeat 0 0;
+    content: "";
+    display: block;
+    height: 2em;
+    margin-left: 1em;
+    width: 2em; }
+
+/* line 44, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+blockquote {
+  font-size: 2.2em;
+  margin: 1.3em 0; }
+  /* line 47, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  blockquote:before {
+    content: "“"; }
+  /* line 50, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  blockquote:after {
+    content: "”"; }
+
+/* line 54, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+cite {
+  font-size: 1.8em;
+  margin-bottom: 1.3em;
+  text-align: right;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  justify-content: flex-end;
+  -ms-flex-pack: justify; }
+
+/* line 61, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+header#fixed-header {
+  background: white;
+  z-index: 25; }
+
+/* line 65, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+nav {
+  height: 6em; }
+
+/* ----- Alpha Navigation ----- */
+/* line 70, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+#alpha-navigation {
+  background: #fff;
+  font-size: 18px;
+  height: 6em;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify; }
+  /* line 80, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #alpha-navigation.is_stuck {
+    background-color: rgba(255, 255, 255, 0.96);
+    transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    box-shadow: 0 0 12px 0 rgba(77, 77, 77, 0.3);
+    -moz-box-shadow: 0 0 12px 0 rgba(77, 77, 77, 0.3);
+    -webkit-box-shadow: 0 0 12px 0 rgba(77, 77, 77, 0.3); }
+  /* line 86, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #alpha-navigation a {
+    color: #000;
+    font-weight: 400; }
+    /* line 90, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    #alpha-navigation a:hover {
+      border-bottom: 3px solid #000; }
+    /* line 94, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    #alpha-navigation a.current, #alpha-navigation a.current:hover {
+      background-color: #fff200; }
+  /* line 98, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #alpha-navigation ul.sectional {
+    width: 50%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify; }
+  /* line 103, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #alpha-navigation span {
+    cursor: pointer;
+    transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -webkit-transition: all 300ms ease; }
+  /* line 107, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #alpha-navigation .logo {
+    background: url("http://res.cloudinary.com/the-engine-is-red/image/upload/v1449092614/engine-site/engine_logo.svg") no-repeat left center;
+    height: 10em;
+    margin-left: -2.1em;
+    text-decoration: none;
+    width: 10em; }
+    /* line 113, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    #alpha-navigation .logo:hover {
+      background: url("http://res.cloudinary.com/the-engine-is-red/image/upload/v1449788039/engine-site/engine_logo_hover.svg") no-repeat left center;
+      border-bottom: 0; }
+
+/* line 119, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.client-list li {
+  font-size: 1.8em;
+  width: 100%; }
+
+/* line 123, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.col.two {
+  flex: none;
+  width: 36%; }
+
+/* line 128, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.contact-us form {
+  background-color: #00AEEF;
+  padding: 15px;
+  opacity: .8; }
+/* line 133, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.contact-us #alpha-contact {
+  display: none; }
+/* line 136, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.contact-us #content[role="main"] {
+  height: 80em;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+/* line 141, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.contact-us .content-block {
+  width: 50%; }
+/* line 144, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.contact-us .content-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+/* line 148, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.contact-us #item-id-11 input[type="text"] {
+  margin-right: 15px; }
+/* line 151, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.contact-us .page {
+  background: url("http://res.cloudinary.com/the-engine-is-red/image/upload/v1449872695/engine-site/letsTalk_bg.jpg") no-repeat 0 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover; }
+
+/* line 156, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.content-container {
+  margin: 0 auto;
+  padding: 0 2em;
+  width: 1000px; }
+
+/* line 161, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.content-band {
+  padding: 5em 0; }
+
+/* line 164, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.culture {
+  background: url("http://res.cloudinary.com/the-engine-is-red/image/upload/v1449271738/engine-site/meettheengine_bg.jpg") no-repeat center top;
+  color: #fff;
+  height: 80em;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+/* line 172, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.dual-photos {
+  margin: 6em 0; }
+
+/* line 175, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.flex.wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+/* line 180, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.fullwidth-links {
+  height: 45em;
+  overflow: hidden;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  /* line 187, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .fullwidth-links:before {
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 3; }
+  /* line 194, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .fullwidth-links:hover:before {
+    background-color: #000;
+    opacity: .5;
+    -webkit-transition: background 1s ease-in-out;
+    -moz-transition: background 1s ease-in-out;
+    -o-transition: background 1s ease-in-out;
+    transition: background 1s ease-in-out; }
+  /* line 202, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .fullwidth-links p {
+    margin: 0; }
+  /* line 205, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .fullwidth-links img {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  /* line 211, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .fullwidth-links span.content-container {
+    z-index: 5; }
+
+/* line 215, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.half {
+  width: 48%; }
+
+/* line 218, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.hero {
+  color: #fff;
+  height: 80em;
+  position: relative;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+/* line 226, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.home.hero {
+  background: url(http://res.cloudinary.com/the-engine-is-red/image/upload/v1449081705/engine-site/alpha-landing-hero.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover; }
+
+/* line 230, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.icon {
+  height: 8em;
+  width: 8em; }
+
+/* line 234, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.image-container.item {
+  display: none; }
+
+/* line 237, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.intro {
+  background-color: #00AEEF;
+  color: #fff;
+  height: 20em;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+/* line 244, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.job-posting h2 {
+  color: #00AEEF;
+  cursor: pointer;
+  font-size: 2.5em;
+  font-weight: 300; }
+
+/* line 250, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.link {
+  color: #00AEEF; }
+
+/* line 253, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.next-story {
+  padding: 0; }
+  /* line 255, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .next-story h2 {
+    font-size: 3.2em;
+    font-weight: bold; }
+  /* line 259, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .next-story p.circle-arrow:after {
+    height: 1em;
+    width: 1em; }
+  /* line 263, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .next-story .content-container {
+    z-index: 5; }
+
+/* line 267, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+#openings {
+  background: white;
+  text-align: center;
+  padding: 6em 0; }
+  /* line 271, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #openings a {
+    color: #00AEEF; }
+  /* line 274, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #openings .content-container {
+    text-align: left; }
+
+/* line 278, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.process {
+  color: #000; }
+
+/* line 282, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.slick-slider .slide-content {
+  color: #fff;
+  height: 100%;
+  margin: 0 auto;
+  width: 90%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-direction: column;
+  -webkit-box-direction: column;
+  -ms-box-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flexbox-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: justify; }
+/* line 291, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.slick-slider .slick-dots {
+  bottom: 5em;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: justify; }
+  /* line 302, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .slick-slider .slick-dots li {
+    background: #ddd;
+    border: 0;
+    height: 1.5em;
+    margin: 0 1em;
+    width: 1.5em; }
+    /* line 308, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .slick-slider .slick-dots li.slick-active {
+      background: #00AEEF; }
+  /* line 312, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .slick-slider .slick-dots button {
+    visibility: hidden; }
+/* line 316, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.slick-slider .slick-slide {
+  height: 80em;
+  position: relative; }
+  /* line 319, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .slick-slider .slick-slide img {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: auto;
+    z-index: -1; }
+
+/* line 329, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+#social {
+  background: white; }
+
+/* line 332, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.subtext {
+  color: #fff;
+  font-size: 2.2em;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  /* line 338, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .subtext img {
+    height: 2em;
+    margin-left: 1em;
+    position: static !important;
+    width: 2em !important; }
+
+/* line 345, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.testimonial {
+  font-style: italic;
+  letter-spacing: .12em;
+  line-height: 1.4;
+  margin: 0 auto;
+  width: 85%; }
+
+/* line 353, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.thank-you h1 {
+  font-size: 20em; }
+/* line 356, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.thank-you #alpha-contact {
+  display: none; }
+/* line 359, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.thank-you #content[role="main"] {
+  height: 80em;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: justify; }
+/* line 365, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.thank-you .page {
+  background: url("http://res.cloudinary.com/the-engine-is-red/image/upload/v1449872694/engine-site/talkSoon_bg.jpg") no-repeat 0 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover; }
+
+/* line 370, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+#wrapper {
+  background: #fff; }
+
+/* line 373, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+header[role=banner] a {
+  display: none; }
+
+/* line 378, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.responsive-img {
+  display: none; }
+
+/* line 382, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.main-messaging {
+  background-color: white;
+  height: 40em;
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: justify; }
+  /* line 389, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .main-messaging p {
+    color: black;
+    max-width: 35em;
+    letter-spacing: 1px;
+    font-weight: 100; }
+
+/* --- */
+/* line 396, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+#page-hero-20 h1 {
+  display: none; }
+
+/* line 400, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+#page-hero-20 .hero-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -webkit-transition: all 200ms ease;
+  max-width: 762px;
+  z-index: 2; }
+
+/* ----- Alpha Team ----- */
+/* line 409, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.team-member {
+  padding: 25px 25px 40px;
+  width: 290px;
+  min-height: 538px;
+  position: relative;
+  background-color: #fff;
+  margin: 20px 0;
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
+  color: #000;
+  border-radius: 1px;
+  box-shadow: 0 0 12px 0 rgba(77, 77, 77, 0.3);
+  -moz-box-shadow: 0 0 12px 0 rgba(77, 77, 77, 0.3);
+  -webkit-box-shadow: 0 0 12px 0 rgba(77, 77, 77, 0.3); }
+  /* line 423, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .team-member a.edit-link {
+    font-size: 14px;
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: 10px;
+    left: 15px; }
+  /* line 428, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .team-member h3 {
+    position: absolute;
+    top: 395px;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    padding: 0 25px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 18px;
+    color: #ec008c;
+    cursor: default;
+    font-weight: 600; }
+    /* line 438, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .team-member h3:hover + .portrait-container img.alt {
+      opacity: 1; }
+    /* line 442, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .team-member h3:hover + .portrait-container img.main {
+      opacity: 0; }
+  /* line 447, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .team-member p {
+    margin-bottom: 10px; }
+  /* line 451, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .team-member .team-member-link {
+    position: absolute;
+    bottom: 15px;
+    right: 25px; }
+  /* line 458, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .team-member .portrait-container {
+    height: 350px;
+    margin-bottom: 52px;
+    position: relative;
+    background-color: #c4c4c4; }
+    /* line 464, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .team-member .portrait-container img {
+      top: 0;
+      left: 0;
+      position: absolute;
+      z-index: 1;
+      transition: all 500ms ease;
+      -o-transition: all 500ms ease;
+      -moz-transition: all 500ms ease;
+      -webkit-transition: all 500ms ease;
+      -webkit-transform: rotate(0);
+      -moz-transform: rotate(0);
+      transform: rotate(0); }
+      /* line 476, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+      .team-member .portrait-container img.alt {
+        opacity: 0;
+        z-index: 2; }
+  /* line 483, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .team-member q {
+    font-weight: 400; }
+
+/* line 488, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.team-section {
+  padding: 130px 0 80px;
+  position: relative;
+  overflow: hidden;
+  background: transparent url("images/alpha-team-dot-bg.png") repeat 0 0; }
+  /* line 494, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .team-section .h2 {
+    display: none; }
+  /* line 498, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .team-section .alpha-team {
+    overflow: hidden;
+    width: 5640px;
+    height: 640px; }
+    /* line 504, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .team-section .alpha-team li {
+      float: left;
+      width: 340px;
+      margin: 0 18px; }
+  /* line 511, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .team-section .team-gallery {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    position: relative; }
+    /* line 517, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .team-section .team-gallery .view-content {
+      overflow: hidden; }
+  /* line 522, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .team-section:before {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: 80px;
+    content: "";
+    display: block;
+    background: transparent url("images/alpha-cheveron-white.png") no-repeat center top;
+    z-index: 100; }
+  /* line 533, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .team-section .slider-control {
+    display: block;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    cursor: default;
+    width: 400px;
+    background-color: rgba(239, 239, 239, 0.8);
+    z-index: 200; }
+    /* line 543, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .team-section .slider-control:before {
+      content: "";
+      display: block;
+      width: 1px;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      z-index: 1;
+      box-shadow: 0 0 12px 0 rgba(77, 77, 77, 0.3);
+      -moz-box-shadow: 0 0 12px 0 rgba(77, 77, 77, 0.3);
+      -webkit-box-shadow: 0 0 12px 0 rgba(77, 77, 77, 0.3);
+      border-radius: 2px; }
+    /* line 552, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .team-section .slider-control em {
+      display: none;
+      height: 123px;
+      width: 42px; }
+    /* line 558, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .team-section .slider-control span {
+      position: absolute;
+      top: 50%;
+      right: 23px;
+      bottom: auto;
+      left: auto;
+      height: 123px;
+      width: 42px;
+      margin-top: -62px;
+      text-indent: -9000em;
+      background: transparent url("images/alpha-arrows.png") no-repeat 0 -246px;
+      transition: position 200ms ease;
+      -o-transition: position 200ms ease;
+      -moz-transition: position 200ms ease;
+      -webkit-transition: position 200ms ease; }
+    /* line 569, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .team-section .slider-control[data-slider="left"] {
+      left: -381px;
+      border-right: 1px solid #f5f5f5;
+      background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(240, 240, 240, 0.9) 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(240, 240, 240, 0.9)));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(240, 240, 240, 0.9) 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(240, 240, 240, 0.9) 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(240, 240, 240, 0.9) 100%);
+      /* IE10+ */
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(240, 240, 240, 0.9) 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#e6f0f0f0',GradientType=1 );
+      /* IE6-9 */ }
+      /* line 574, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+      .team-section .slider-control[data-slider="left"]:before {
+        right: 0;
+        box-shadow: 0 0 12px 0 rgba(77, 77, 77, 0.3);
+        -moz-box-shadow: 0 0 12px 0 rgba(77, 77, 77, 0.3);
+        -webkit-box-shadow: 0 0 12px 0 rgba(77, 77, 77, 0.3); }
+      /* line 579, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+      .team-section .slider-control[data-slider="left"] span {
+        background-position: 0 -123px; }
+        /* line 582, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+        .team-section .slider-control[data-slider="left"] span:hover {
+          background-position: -42px -123px; }
+    /* line 588, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .team-section .slider-control[data-slider="right"] {
+      right: -381px;
+      border-left: 1px solid #f5f5f5;
+      background: -moz-linear-gradient(left, rgba(240, 240, 240, 0.9) 0%, rgba(255, 255, 255, 0) 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(240, 240, 240, 0.9)), color-stop(100%, rgba(255, 255, 255, 0)));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(left, rgba(240, 240, 240, 0.9) 0%, rgba(255, 255, 255, 0) 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(left, rgba(240, 240, 240, 0.9) 0%, rgba(255, 255, 255, 0) 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(left, rgba(240, 240, 240, 0.9) 0%, rgba(255, 255, 255, 0) 100%);
+      /* IE10+ */
+      background: linear-gradient(to right, rgba(240, 240, 240, 0.9) 0%, rgba(255, 255, 255, 0) 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6f0f0f0', endColorstr='#00ffffff',GradientType=1 );
+      /* IE6-9 */ }
+      /* line 594, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+      .team-section .slider-control[data-slider="right"] span {
+        left: 40px;
+        background-position: -42px -246px; }
+    /* line 600, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .team-section .slider-control.active[data-slider="right"] span {
+      background-position: 0 0; }
+    /* line 604, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .team-section .slider-control.active[data-slider="right"] span:hover {
+      background-position: -42px 0; }
+    /* line 608, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .team-section .slider-control.active em {
+      display: block; }
+    /* line 612, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .team-section .slider-control.active span {
+      cursor: pointer; }
+  /* line 617, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .team-section.active img.alt {
+    opacity: 1; }
+  /* line 621, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .team-section.active img.main {
+    opacity: 0; }
+  /* line 625, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .team-section.active h3:hover + .portrait-container img.alt {
+    opacity: 0; }
+  /* line 629, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .team-section.active h3:hover + .portrait-container img.main {
+    opacity: 1; }
+
+/* ----- Capabilities Section ----- */
+/* line 638, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+#section-id-2-alpha_capabilities:after {
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: -78px;
+  left: 0;
+  height: 78px;
+  content: "";
+  display: block;
+  background: transparent url("images/alpha-cheveron-magenta.png") repeat-y center top;
+  z-index: 100; }
+
+/* line 647, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.capabilities {
+  position: relative;
+  background-color: #ec008c;
+  padding: 40px 20px 100px;
+  transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -webkit-transition: all 300ms ease; }
+  /* line 653, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .capabilities a {
+    margin: 0 15px;
+    padding: 0 10px 4px;
+    font-weight: 400;
+    display: inline-block;
+    color: #fff;
+    border-bottom: 5px solid #ec008c; }
+    /* line 661, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .capabilities a:hover {
+      border-color: #d2007d;
+      color: #fff; }
+    /* line 666, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .capabilities a.active, .capabilities a.active:hover {
+      border-color: #fff; }
+    /* line 670, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .capabilities a.edit-link {
+      display: none; }
+  /* line 675, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .capabilities h2 {
+    display: none; }
+  /* line 679, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .capabilities h3 {
+    display: none; }
+  /* line 683, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .capabilities p {
+    color: black;
+    max-width: 35em;
+    letter-spacing: 1px;
+    font-weight: 100; }
+  /* line 689, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .capabilities .content-section .capabilities-item {
+    opacity: .0; }
+  /* line 693, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .capabilities .content-section li:first-child .capabilities-item {
+    opacity: 1; }
+
+/* line 699, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.header-section {
+  padding: 140px 0 20px;
+  background: #ec008c url("images/alpha-cheveron-dot.png") no-repeat center -7px; }
+
+/* line 704, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.capabilities-navigation {
+  width: auto !important;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: transparent; }
+  /* line 710, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .capabilities-navigation a {
+    margin: 0 15px;
+    padding: 0 10px 4px;
+    font-weight: 400;
+    display: inline-block;
+    color: #fff;
+    border-bottom: 5px solid #ec008c; }
+    /* line 718, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .capabilities-navigation a:hover {
+      border-color: #d2007d; }
+    /* line 722, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .capabilities-navigation a.active, .capabilities-navigation a.active:hover {
+      border-color: #fff; }
+  /* line 727, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .capabilities-navigation li {
+    display: inline-block; }
+
+/* ----- Alpha Projects ----- */
+/* ----- full screen galleries ----- */
+/* line 736, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.project-detail {
+  position: relative; }
+  /* line 740, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail article {
+    display: none; }
+    /* line 743, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .project-detail article.active {
+      display: list-item; }
+  /* line 747, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail .group-content {
+    margin: 0 auto;
+    max-width: 900px;
+    position: relative;
+    top: 10%; }
+    /* line 754, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .project-detail .group-content .client small {
+      display: block;
+      font-size: 48px; }
+    /* line 759, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .project-detail .group-content > div {
+      line-height: 2.2em;
+      letter-spacing: 2px;
+      font-size: 18px;
+      transition: all 200ms ease;
+      -o-transition: all 200ms ease;
+      -moz-transition: all 200ms ease;
+      -webkit-transition: all 200ms ease; }
+  /* line 769, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail a.edit-link {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: 120px;
+    left: 0;
+    font-size: 14px;
+    color: #fff;
+    background-color: #00AEEF;
+    padding: 10px 15px 10px 20px;
+    z-index: 101; }
+    /* line 777, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .project-detail a.edit-link:hover {
+      background-color: rgba(0, 0, 0, 0.8); }
+  /* line 783, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail .caption {
+    position: absolute;
+    top: 15%;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    box-shadow: 0 0 12px 0 rgba(77, 77, 77, 0.3);
+    -moz-box-shadow: 0 0 12px 0 rgba(77, 77, 77, 0.3);
+    -webkit-box-shadow: 0 0 12px 0 rgba(77, 77, 77, 0.3);
+    border-radius: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 16px;
+    padding: 10px 30px 8px 20px;
+    overflow: hidden;
+    display: block; }
+  /* line 794, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail .feature {
+    width: 100%;
+    overflow: hidden; }
+  /* line 800, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail .gallery-nav {
+    display: inline; }
+  /* line 804, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail h2 {
+    font-size: 48px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    text-align: left; }
+  /* line 811, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail h2 .project-name {
+    display: none; }
+    /* line 814, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .project-detail h2 .project-name small {
+      font-size: 48px;
+      display: block; }
+  /* line 820, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail .hero {
+    overflow: hidden;
+    display: block; }
+  /* line 825, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail img {
+    width: 100%;
+    height: auto;
+    position: relative; }
+  /* line 831, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail .information-container .container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.8); }
+  /* line 838, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail .item-list {
+    float: right;
+    width: 29.82456140350877%;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: left;
+    max-width: 350px; }
+    /* line 846, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .project-detail .item-list li {
+      font-size: 28px;
+      margin-bottom: 20px; }
+      /* line 850, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+      .project-detail .item-list li:before {
+        content: "+ "; }
+  /* line 856, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail .item-nav {
+    margin-left: -150px;
+    width: 300px;
+    text-align: center;
+    bottom: 65px;
+    left: 50%;
+    position: absolute;
+    z-index: 102; }
+    /* line 865, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .project-detail .item-nav li {
+      display: inline-block;
+      text-align: center;
+      text-indent: -9009em;
+      margin: 0 5px;
+      width: 10px;
+      height: 10px;
+      background-color: #4e4e4e;
+      cursor: pointer;
+      box-shadow: 0 0 12px 0 rgba(77, 77, 77, 0.3);
+      -moz-box-shadow: 0 0 12px 0 rgba(77, 77, 77, 0.3);
+      -webkit-box-shadow: 0 0 12px 0 rgba(77, 77, 77, 0.3); }
+      /* line 876, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+      .project-detail .item-nav li:hover, .project-detail .item-nav li.active {
+        background-color: #00AEEF; }
+  /* line 882, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail .main {
+    float: left; }
+  /* line 886, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail .pagination {
+    display: inline; }
+  /* line 892, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail .pagination span {
+    cursor: pointer;
+    display: block;
+    z-index: 99;
+    width: 160px;
+    text-indent: -9009em;
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: 0;
+    left: auto;
+    transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -webkit-transition: all 200ms ease; }
+    /* line 901, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .project-detail .pagination span:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: autoauto;
+      bottom: autoauto;
+      left: 50px;
+      width: 42px;
+      height: 123px;
+      margin: -21px 0 0 0;
+      background: transparent url("images/alpha-arrows.png") no-repeat 0 -123px; }
+    /* line 910, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .project-detail .pagination span:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+      box-shadow: 0 0 12px 0 rgba(77, 77, 77, 0.3);
+      -moz-box-shadow: 0 0 12px 0 rgba(77, 77, 77, 0.3);
+      -webkit-box-shadow: 0 0 12px 0 rgba(77, 77, 77, 0.3); }
+    /* line 915, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .project-detail .pagination span:hover:before {
+      background-position: -42px -123px; }
+    /* line 919, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .project-detail .pagination span.next {
+      right: 0; }
+    /* line 923, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .project-detail .pagination span.next:before {
+      left: auto;
+      right: 50px;
+      background-position: 0 0; }
+    /* line 929, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .project-detail .pagination span.next:hover:before {
+      background-position: -42px 0; }
+  /* line 935, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail p {
+    text-transform: uppercase;
+    text-align: left;
+    max-width: 560px; }
+
+/* ----- */
+/* line 944, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.project-list {
+  background-color: #000; }
+  /* line 949, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-list .slide-container li {
+    display: none; }
+    /* line 952, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .project-list .slide-container li.active {
+      display: list-item; }
+  /* line 959, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-list > li {
+    display: none; }
+    /* line 962, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .project-list > li.active {
+      display: list-item;
+      z-index: 5; }
+
+/* line 970, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+#work {
+  height: 60em;
+  position: relative; }
+
+/* line 975, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.slide-button {
+  width: 130px;
+  text-indent: -9009em;
+  cursor: pointer;
+  display: block;
+  transition: all 600ms ease;
+  -o-transition: all 600ms ease;
+  -moz-transition: all 600ms ease;
+  -webkit-transition: all 600ms ease;
+  font-size: 111px;
+  color: #FFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 10; }
+  /* line 988, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .slide-button:hover {
+    background-color: rgba(0, 0, 0, 0.7); }
+  /* line 992, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .slide-button.prev {
+    left: 0px; }
+    /* line 995, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .slide-button.prev:before {
+      background: url("/sites/default/files/alpha/general/sonoma-county-slides/left-arrow.png") no-repeat right center;
+      width: 65px;
+      height: 133px;
+      left: 30px;
+      display: block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%); }
+    /* line 1007, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .slide-button.prev:hover:before {
+      background: url("/sites/default/files/alpha/general/sonoma-county-slides/left-arrow-over.png") no-repeat right center; }
+  /* line 1014, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .slide-button.next {
+    right: 0px; }
+    /* line 1017, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .slide-button.next:before {
+      background: url("/sites/default/files/alpha/general/sonoma-county-slides/rightarrow.png") no-repeat right center;
+      width: 65px;
+      height: 133px;
+      right: 40px;
+      display: block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%); }
+    /* line 1029, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .slide-button.next:hover:before {
+      background: url("/sites/default/files/alpha/general/sonoma-county-slides/rightarrow-over.png") no-repeat left center; }
+
+/* line 1037, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.item {
+  left: 0;
+  right: 0;
+  width: 100%; }
+
+/* line 1044, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.gallery-container {
+  height: auto;
+  position: relative;
+  overflow: hidden; }
+
+/* ----- Projects Nav ----- */
+/* line 1053, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.projects-navigation {
+  width: auto !important;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+  padding: 10px 0 20px;
+  position: relative;
+  background-color: #FFF;
+  z-index: 15; }
+  /* line 1062, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .projects-navigation:before {
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 55px;
+    left: 0;
+    height: 80px;
+    content: "";
+    display: block;
+    background: transparent url("images/alpha-cheveron-white-alt.png") no-repeat center top;
+    z-index: 1; }
+  /* line 1072, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .projects-navigation a {
+    margin: 0 15px;
+    padding: 0 10px 4px;
+    font-weight: 400;
+    display: inline-block;
+    color: #000;
+    border-bottom: 5px solid #fff; }
+    /* line 1080, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .projects-navigation a:hover {
+      color: #000;
+      border-color: #efefef; }
+    /* line 1085, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .projects-navigation a.active, .projects-navigation a.active:hover {
+      border-color: #ec008c; }
+  /* line 1090, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .projects-navigation li {
+    display: inline-block; }
+
+/* line 1095, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.section-navigation {
+  height: 1px;
+  position: relative; }
+
+/* ----- Contact Section ----- */
+/* line 1102, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.page-node-101 #wrapper > footer {
+  display: block; }
+
+/* line 1106, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+#alpha-contact {
+  background: url("http://res.cloudinary.com/the-engine-is-red/image/upload/v1449091346/engine-site/alpha-google-map.jpg") no-repeat scroll center top #E4E4E4;
+  min-height: 550px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify; }
+  /* line 1113, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #alpha-contact .contact-content {
+    margin: 0 auto;
+    width: 1300px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify; }
+  /* line 1120, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #alpha-contact form {
+    background-color: #00AEEF;
+    padding: 15px; }
+  /* line 1125, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #alpha-contact abbr {
+    display: none; }
+  /* line 1130, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #alpha-contact a.geo {
+    position: absolute;
+    top: 258px;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    width: 47px;
+    height: 31px;
+    margin-left: -2px;
+    display: block;
+    background: url("images/alpha-google-map-pin.png") no-repeat scroll 0px 0px transparent;
+    transition: none 0s ease 0s;
+    border-bottom: none; }
+  /* line 1141, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #alpha-contact a.geo:hover {
+    background: url("images/alpha-google-map-pin.png") no-repeat scroll 0px -32px transparent;
+    border-bottom: none; }
+
+/* line 1147, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+#item-id-11 input[type="submit"] {
+  width: 100%; }
+
+/* line 1151, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+#item-id-11 input[type="text"], #item-id-11 input[type="email"] {
+  width: 47.8%; }
+
+/* line 1155, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+#item-id-11 input[type="text"] {
+  margin-right: 3.7%; }
+
+/* line 1159, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+#item-id-11 textarea {
+  width: 99.8%; }
+
+/* line 1163, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.blank {
+  display: none; }
+
+/* line 1167, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+#call-to-action {
+  background-color: #00AEEF;
+  padding: 2em 1em;
+  font-size: 17px;
+  width: 600px;
+  line-height: 1.6em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify; }
+  /* line 1178, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #call-to-action p {
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    line-height: 1.9em;
+    font-weight: 200; }
+  /* line 1186, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #call-to-action h2 {
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 30px;
+    letter-spacing: 0px; }
+  /* line 1195, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #call-to-action .location {
+    width: 48%; }
+  /* line 1199, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #call-to-action .location.ca .locate {
+    width: 4em;
+    height: 4em;
+    content: "";
+    display: block;
+    margin: 0 auto 1em auto;
+    text-align: center;
+    background: transparent url("http://res.cloudinary.com/the-engine-is-red/image/upload/v1449160675/engine-site/california_icon.svg") no-repeat 0 0; }
+  /* line 1209, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #call-to-action .location.mn .locate {
+    width: 4em;
+    height: 4em;
+    content: "";
+    display: block;
+    margin: 0 auto 1em auto;
+    text-align: center;
+    background: transparent url("http://res.cloudinary.com/the-engine-is-red/image/upload/v1449160676/engine-site/minneapolis_icon.svg") no-repeat 0 0; }
+
+/* line 1220, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.copyright {
+  color: #fefefe;
+  background-color: #231f20;
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  padding: 40px; }
+  /* line 1228, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .copyright a {
+    color: #fefefe;
+    border-bottom: 2px solid #231f20; }
+    /* line 1232, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .copyright a:hover {
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.6); }
+  /* line 1237, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .copyright .divider {
+    margin: 0 4px; }
+
+/* line 1242, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+.extended {
+  padding: 20px;
+  background-color: #00aeef;
+  text-align: center; }
+  /* line 1247, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .extended a {
+    display: block;
+    width: 5em;
+    transition: background-color 100ms ease;
+    -o-transition: background-color 100ms ease;
+    -moz-transition: background-color 100ms ease;
+    -webkit-transition: background-color 100ms ease; }
+    /* line 1252, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .extended a:hover {
+      background-position: center -180px;
+      background-color: #284f5d; }
+  /* line 1258, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .extended .linkedin a {
+    background-position: center 0; }
+    /* line 1261, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .extended .linkedin a:hover {
+      background-position: center -135px; }
+  /* line 1266, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .extended .blog a {
+    background-position: center -90px; }
+    /* line 1268, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .extended .blog a:hover {
+      background-position: center -225px; }
+  /* line 1273, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .extended h3 {
+    display: none; }
+  /* line 1277, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .extended li {
+    margin: 0 15px;
+    display: inline-block; }
+
+/* ~ ~ ~ ~ Media Queries~ ~ ~ ~ */
+/*------Tablets------*/
+@media only screen and (min-width: 768px) {
+  /* line 1288, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  h1, .culture h2, .slick-slider h2 {
+    font-size: 7em; }
+
+  /* line 1292, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .slick-slider .slick-slide {
+    height: 80em; }
+
+  /* line 1296, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #work {
+    height: 80em; } }
+/*------Small Laptops------*/
+@media only screen and (min-width: 1024px) {
+  /* line 1304, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  h1, .culture h2, .slick-slider h2 {
+    font-size: 7em; }
+
+  /* line 1308, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .slick-slider .slide-content {
+    width: 100em; }
+
+  /* line 1312, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .subtext {
+    width: 55%; } }
+/*------- Large Screens ---------------------*/
+@media only screen and (min-width: 1600px) {
+  /* line 1320, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .slick-slider .slick-slide img {
+    height: auto;
+    width: 100%; } }
+/*------- Large Screens ---------------------*/
+@media only screen and (min-width: 1020px) and (max-width: 1300px) {
+  /* line 1329, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .gallery-container {
+    max-height: 650px;
+    margin: 0 auto; }
+
+  /* line 1334, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #alpha-contact .contact-content {
+    padding: 0; }
+  /* line 1337, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #alpha-contact #call-to-action {
+    width: 100%; }
+  /* line 1340, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #alpha-contact #contact-form {
+    text-align: center;
+    width: 100%; }
+    /* line 1343, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    #alpha-contact #contact-form #item-id-11 input[type="submit"] {
+      margin: 0 auto; }
+
+  /* line 1348, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .page-node-101 #wrapper > footer {
+    clear: both; } }
+/* ----- iPads (portrait and landscape) ----- */
+@media only screen and (max-width: 900px) {
+  /* line 1357, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #project-13 p {
+    font-size: 12px !important; }
+  /* line 1361, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #project-13 .item-nav {
+    bottom: 12px !important; }
+
+  /* line 1368, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail p {
+    max-width: none;
+    padding-left: 10%;
+    text-align: justify;
+    font-size: 16px; }
+  /* line 1375, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail h2, .project-detail .group-content .client small {
+    font-size: 1.8em;
+    text-align: center; }
+  /* line 1380, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail .group-content > div {
+    font-size: 12px; }
+  /* line 1384, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail .main {
+    margin-right: 12%; }
+  /* line 1388, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail .item-list {
+    max-width: none;
+    width: 100%;
+    display: inline-block;
+    float: none;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 12px; }
+    /* line 1397, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .project-detail .item-list li {
+      font-size: .9em;
+      padding-left: 20px;
+      display: inline; }
+      /* line 1402, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+      .project-detail .item-list li:first {
+        padding: 0; }
+      /* line 1406, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+      .project-detail .item-list li:before {
+        content: ""; }
+
+  /* line 1413, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .capabilities {
+    padding: 0; }
+    /* line 1416, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .capabilities h3 {
+      cursor: pointer;
+      text-align: center;
+      display: block;
+      color: #fff;
+      border-top: 3px solid #d2007d;
+      font-size: 20px;
+      font-weight: 400;
+      padding: 20px 30px;
+      font-family: "proxima-nova","helvetica neue",arial,sans-serif;
+      box-shadow: 0 0 3px 0 rgba(241, 97, 183, 0.8) inset;
+      -moz-box-shadow: 0 0 3px 0 rgba(241, 97, 183, 0.8) inset;
+      -webkit-box-shadow: 0 0 3px 0 rgba(241, 97, 183, 0.8) inset;
+      transition: all 300ms ease;
+      -o-transition: all 300ms ease;
+      -moz-transition: all 300ms ease;
+      -webkit-transition: all 300ms ease; }
+      /* line 1431, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+      .capabilities h3.active, .capabilities h3.active:hover {
+        background-color: transparent;
+        box-shadow: 0 0 12px 0 rgba(77, 77, 77, 0.3);
+        -moz-box-shadow: 0 0 12px 0 rgba(77, 77, 77, 0.3);
+        -webkit-box-shadow: 0 0 12px 0 rgba(77, 77, 77, 0.3); }
+      /* line 1437, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+      .capabilities h3:hover {
+        background-color: rgba(210, 0, 125, 0.4); }
+    /* line 1442, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .capabilities li:first-child h3 {
+      border-style: none;
+      padding-top: 28px; }
+    /* line 1447, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .capabilities p {
+      line-height: 1.7;
+      padding: 0 30px 40px;
+      display: none;
+      font-size: 18px;
+      text-align: left; }
+    /* line 1455, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .capabilities.content-section .capabilities-item {
+      opacity: 1 !important;
+      display: block !important; }
+    /* line 1460, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .capabilities.header-section {
+      display: none; }
+
+  /* line 1465, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .copyright {
+    text-align: left; }
+    /* line 1467, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .copyright br {
+      text-align: left; }
+
+  /* line 1473, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .main-messaging {
+    padding: 30px 30px;
+    text-align: left; }
+    /* line 1477, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .main-messaging br {
+      display: none; }
+    /* line 1481, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .main-messaging h2 {
+      background-color: transparent;
+      color: #fff;
+      font-size: 34px;
+      padding: 0 0 15px;
+      position: relative;
+      font-weight: 300;
+      text-align: left; }
+      /* line 1490, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+      .main-messaging h2:before {
+        display: none; }
+    /* line 1495, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .main-messaging p {
+      line-height: 1.7;
+      padding: 0;
+      font-size: 18px;
+      text-align: left; }
+      /* line 1501, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+      .main-messaging p:after {
+        display: none; }
+
+  /* line 1507, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .page-hero img.hero-bg {
+    max-width: 150%;
+    margin-left: -50%;
+    position: static; }
+
+  /* line 1513, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #page-hero-20 {
+    height: 350px; }
+    /* line 1516, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    #page-hero-20 .hero-title {
+      top: 0 !important;
+      right: 0 !important;
+      max-width: 390px;
+      width: 90%; }
+
+  /* line 1524, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .section-navigation, .team-section, .locate {
+    display: none; }
+
+  /* line 1528, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #site-sections {
+    top: 0;
+    position: fixed; }
+
+  /* line 1534, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #section-id-2-alpha_capabilities:after {
+    display: none; }
+
+  /* line 1541, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #alpha-contact a.locate, #alpha-contact a.geo {
+    display: none; }
+  /* line 1545, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #alpha-contact input, #alpha-contact textarea {
+    width: 90% !important;
+    margin-right: 0 !important;
+    max-width: none !important; }
+
+  /* line 1552, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .projects-navigation {
+    padding: 20px 0 10px; }
+    /* line 1555, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .projects-navigation:before {
+      display: none; }
+    /* line 1559, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .projects-navigation a {
+      padding: 0 2px 3px;
+      border-width: 2px;
+      font-size: 16px;
+      margin: 0 10px 10px; } }
+/* ----- Cellphones, small screens ----- */
+@media only screen and (max-width: 580px) {
+  /* line 1571, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .slideshow-img {
+    display: none; }
+
+  /* line 1576, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail .item-nav {
+    display: none !important; }
+  /* line 1579, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail .group-content p {
+    font-size: .8em !important; }
+  /* line 1583, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail .item-list {
+    margin-bottom: 40px !important; }
+  /* line 1587, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .project-detail .group-content .client small, .project-detail h2 {
+    font-size: 1.3em !important; }
+
+  /* line 1591, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  .slide-button {
+    width: 80px; }
+    /* line 1593, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .slide-button.prev:before, .slide-button.prev:hover:before {
+      left: -10px;
+      top: 35%;
+      background-size: 50%; }
+    /* line 1598, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .slide-button.next:before {
+      right: 33px;
+      top: 35%;
+      background-size: 50%; }
+    /* line 1603, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    .slide-button.next:hover:before {
+      right: 0;
+      background-size: 50%; }
+
+  /* line 1608, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+  #call-to-action {
+    font-size: 16px;
+    height: auto; }
+    /* line 1611, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    #call-to-action .location {
+      width: 100%; } }
