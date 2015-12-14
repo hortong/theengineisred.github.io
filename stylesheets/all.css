@@ -1476,10 +1476,10 @@ header[role=banner] a {
 
   /* line 1355, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
   .content-container {
-    height: 10em;
     width: 1000px; }
-    /* line 1358, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
+    /* line 1357, /Users/imelda/Documents/clients/engine.com-middleman/source/stylesheets/all.css.scss */
     .content-container.menu {
+      height: 10em;
       padding: 0;
       display: -webkit-flex;
       display: -ms-flexbox;
