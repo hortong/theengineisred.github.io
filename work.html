@@ -22,17 +22,14 @@
     <div id="wrapper"> 
 
       <!--Header-->  
-      <script>
-  $(document).ready(function(){
-    $("#fixed-header").sticky({topSpacing:0});
-  });
-</script>
+      <header id="fixed-header">
+	<div class="content-container menu">
+		<a class="logo" href="/"></a>
 
-<header id="fixed-header">
-	<div class="content-container">  
 	    <nav id="alpha-navigation">
-	        <a class="logo" href="/"></a>
-	        
+	       <!--Mobile Menu-->
+	       <a id="nav-toggle" href="#"><span></span></a>
+
 	        <ul class="sectional">
 			    <li><a href="/about-us.html">The Engine</a></li>
 			    <li><a href="/work.html">Our Work</a></li>
@@ -42,6 +39,15 @@
 	    </nav>
 	</div>
 </header>
+
+<script>
+  (function($) {
+	$('#nav-toggle').click(function() {
+		$(this).parents('#alpha-navigation').find('ul.sectional').toggle('slow');
+		$(this).toggleClass('active');
+	});
+})(jQuery);
+</script>
 
 
       <div id="content" role="main">
@@ -220,8 +226,8 @@
                     <form accept-charset="UTF-8" action="https://formkeep.com/f/c4cb9ba784b0" method="POST">
                         <div>
                             <input type="hidden" name="utf8" value="✓">
-                            <div class="form-item"><input type="text" name="name" placeholder="Name *" /></div>
-                            <div class="form-item"><input type="email" name="email" placeholder="Email *" /></div>
+                            <div class="form-item"><input type="text" name="name" placeholder="Name *" /> <input type="email" name="email" placeholder="Email *" /></div>
+                            <!-- <div class="form-item"><input type="email" name="email" placeholder="Email *" /></div> -->
                             <div class="form-item-block"><textarea name="message" placeholder="message *"></textarea></div>
                             <div class="form-actions"><input type="submit" value="Submit" /></input></div>
                         </div>

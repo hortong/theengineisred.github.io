@@ -705,10 +705,8 @@ table {
 		background-color: #00aeef;
 		font-weight: 100;
 		font-family: "proxima-nova", "helvetica neue", arial, sans-serif;
-		}
-
-	#item-id-11 input[type="email"] {
-		width: 197px;
+		width: 100%;
+		box-sizing: border-box;
 		}
 
 	#item-id-11 input[type="submit"] {
@@ -728,11 +726,6 @@ table {
 		   	-moz-transition: background-color 100ms ease;
 		   	-webkit-transition: background-color 100ms ease;
 			}
-
-	#item-id-11 input[type="text"] {
-		width: 198px;
-		margin-right: 25px;
-		}	
 
 	#item-id-11 textarea {
 			height: 120px;
