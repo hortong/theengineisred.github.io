@@ -288,6 +288,17 @@
 		$(this).parents('.job-posting').find('div.opening-desc-hidden').toggle('slow');
 		$(this).toggleClass('active');
 	});
+
+
+	// Google Office Tour
+	$('#office-tour').click(function () {
+	    $('#office-tour iframe').css("pointer-events", "auto");
+	});
+
+	$( "#office-tour" ).mouseleave(function() {
+	  $('#office-tour iframe').css("pointer-events", "none"); 
+	});
+
 })(jQuery);
 
 // Slider
