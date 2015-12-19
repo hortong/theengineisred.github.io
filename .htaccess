@@ -1,5 +1,0 @@
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www.theengineisred.com [NC]
-RewriteRule ^(.*)$ http://theengineisred.com/$1 [L,R=301,NC]
-
-Redirect 301 /jobs /about-us.html
