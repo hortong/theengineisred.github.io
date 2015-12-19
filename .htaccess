@@ -1,2 +1,2 @@
 RewriteEngine On
-Redirect 301 /jobs /about-us.html
+Redirect 301 /jobs http://theengineisred.com/about-us.html
