@@ -472,7 +472,14 @@ body .hidden {
   body footer .hidden-mobile,
   body header .hidden-mobile,
   .hidden-mobile {
-    display: none; } }
+    display: none; }
+/**
+*Gregs shitty code to make the intro left-align on mobile
+*/
+.intro p {
+    text-align: left-align;
+    } }
+
 @media only screen and (min-width: 1025px) {
   body main .hidden-dt,
   body footer .hidden-dt,
