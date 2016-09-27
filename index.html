@@ -1,222 +1,111 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <title>The Engine is Red | A Creative Agency</title> -->
+        <!-- <meta name="description" content="Lorem ipsum dolor sit amet."> -->
+        <link rel="icon" href="/images/engine-cube.png" type="image/x-icon">
+        <link rel="home" href="http://theengineisred.com">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <!-- Typekit -->
+        <script src="https://use.typekit.net/ruy5jcr.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+        <!--Google Analytics-->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Welcome to The Engine is Red</title>
-
-    <link href="/stylesheets/normalize.css" rel="stylesheet" /><link href="/stylesheets/all.css" rel="stylesheet" /><link href="/stylesheets/main.css" rel="stylesheet" /><link href="/stylesheets/home.css" rel="stylesheet" /><link href="/stylesheets/jobs.css" rel="stylesheet" /><link href="/stylesheets/gridlex.css" rel="stylesheet" /><link href="/stylesheets/work.css" rel="stylesheet" /><link href="/stylesheets/case-studies.css" rel="stylesheet" /><link href="/stylesheets/gridlex-vars.css" rel="stylesheet" />
-    <link href="/slick/slick.css" rel="stylesheet" />
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.actual/1.0.17/jquery.actual.min.js"></script>
-    <script src="/javascripts/all.js"></script><script src="/javascripts/jquery.sticky.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--SEO Meta Tags-->
-    <meta name="robots" content="noodp">
-    <meta name="robots" content="noydir">
-
-    <!--Google Analytics-->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-7835169-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-  </head>
-
-  <body class="index">
-    <!--Page Wrapper-->
-    <div id="wrapper"> 
-
-      <!--Header-->  
-      <header id="fixed-header">
-	<div class="content-container menu">
-		<a class="logo" href="/"></a>
-
-	    <nav id="alpha-navigation">
-	       <!--Mobile Menu-->
-	       <a id="nav-toggle" href="#"><span></span></a>
-
-	        <ul class="sectional">
-			    <li><a href="/about-us.html">The Engine</a></li>
-			    <li><a href="/work.html">Our Work</a></li>
-			    <li><a href="/get-it-done.html">Get It Done</a></li>
-			    <li><a href="/contact-us.html"><span>Let's Talk</span></a></li>
-			</ul>
-	    </nav>
-	</div>
-</header>
-
-<script>
-  (function($) {
-	$('#nav-toggle').click(function() {
-		$(this).parents('#alpha-navigation').find('ul.sectional').toggle('slow');
-		$(this).toggleClass('active');
-	});
-})(jQuery);
-</script>
-
-
-      <div id="content" role="main">
-    <div class="container">
-        <div class="home hero">
-            <div class="content-container">
-                <h1>The pursuit of a better creative agency</h1>
-                <p>A new approach to client-agency relationships.</p>
-            </div>
+          ga('create', 'UA-7835169-1', 'auto');
+          ga('send', 'pageview');
+        </script>
+        <link href="/stylesheets/styles.css" rel="stylesheet">
+    </head>
+    <body class="splash primary4-block secondary1-text">
+        <div id="hero" class="hero center-text flex-wrap-column-right-middle base1-text">
+            <img class="screenreader-only" alt="" src="images/galaxy.jpg">
+            <h1><img src="/images/the-engine-is-exploring.svg" alt="THE ENGINE IS EXPLORING"></h1>
+            <h3 class="pursuit">The Pursuit of a Better Agency</h3>
+            <h3 class="capabilities">
+                <span>Creative</span>
+                <span class="hidden-mobile">&#8226;</span>
+                <span>Strategy</span>
+                <span class="hidden-mobile">&#8226;</span>
+                <span>Interactive</span>
+            </h3>
         </div>
-
-        <section class="item-container alpha-section main-messaging">
-            <div class="container">
-                <p id="main-messaging">A better way to work together, better for the work, better for the client, better for all. Let’s work together to dream bigger, learn more, build great things, and execute world-changing work.</p>
-            </div>
-        </section><!-- /.block Main Messaging-->
-
-        <!-- ~~~~~~~~ Our Work ~~~~~~~~~~ -->
-        <section id="work">
-            <ul class="our-work-slideshow">
-                <li id="slide0" class="active">
-                    <img src="http://res.cloudinary.com/the-engine-is-red/image/upload/v1449268091/engine-site/homepage_gdb_bg.jpg" alt="Guide Dogs for the Blind" />
-                    <div class="slide-content">
-                        <h2 style="width: 75%;">
-                            Vision-first branding, sighted or not.
-                        </h2>
-                        <a class="subtext" href="/case-studies/gdb.html">Learn about how we brought Guide Dogs for the Blind vision to life with an accessible new brand. <img src="http://res.cloudinary.com/the-engine-is-red/image/upload/v1449272735/engine-site/circle_arrow.svg" /></a>
-                    </div>
-                </li>
-                <li id="slide1">
-                    <img src="http://res.cloudinary.com/the-engine-is-red/image/upload/v1449271738/engine-site/homepage_mdt_bg.jpg" alt="Medtronic" />
-                    <div class="slide-content">
-                        <h2>Cutting through complexities to drive clear results.</h2>
-                        <a class="subtext" href="/case-studies/medtronic.html">We aren't the only ones building great things. <img src="http://res.cloudinary.com/the-engine-is-red/image/upload/v1449272735/engine-site/circle_arrow.svg" /></a>
-                    </div>
-                </li>
-            </ul>
-        </section><!--/ Slider-->
-
-        <a class="culture" href="/about-us.html">
-            <span class="content-container">
-                <h2>Meet the Engine</h2>
-                <p class="subtext">Part day care, part petting zoo, all think tank. We work hard and have a good time doing it.</p>
-                <p class="circle-arrow">Get to know us.</p>
-            </span>
-        </a>
-    </div><!--End Container-->
-</div><!--End Content Main-->
-
-<script type="text/javascript">
-// Slider
-$(document).ready(function(){
-  $('.our-work-slideshow').slick({
-    arrows: false,
-    dots: true,
-    autoplay: true,
-    autoplaySpeed: 12000,
-  });
-});
-</script>
-         
-
-      <!--Footer-->
-      <div id="alpha-contact">
-    <div class="contact-content">
-        <a class="geo" href="http://goo.gl/maps/ffqNF" class="geo">
-            <abbr class="latitude">38.441231</abbr>
-            <abbr class="longitude">-122.714859</abbr>
-        </a>
-        <div id="call-to-action">
-            <div class="location ca">
-                <a class="locate" href="http://goo.gl/maps/ffqNF" target="_blank"></a>
-                <h4 class="org"><a href="http://theengineisred.com" class="url fn">The Engine is Red</a></h4>
-                    <address class="adr">
-                        <span class="street-address">401 Mendocino Avenue</span><br />
-                        <span class="suite"><em>Suite 100</em></span><br />
-                        <span class="locality">Santa Rosa</span>, 
-                        <span class="region">CA</span>
-                        <span class="postal-code">95401</span>
-                        <span class="country-name">USA</span>
-                    </address>
-                    <div class="tel">
-                        <span class="type">Phone</span>
-                        <span class="value">(707) 546-5448</span>
-                    </div>
-                    <!-- <div class="tel">
-                        <span class="type">Fax</span>
-                        <span class="value">(707) 861-8304</span>
-                    </div> -->
-            </div>
-            <div class="location mn">
-                <a class="locate" href="http://goo.gl/h6xZLf"></a>
-                <h4 class="org"><a href="http://theengineisred.com" class="url fn">The Engine is Red</a></h4>
-                    <address class="adr">
-                        <span class="street-address">400 S 4th</span> 
-                        <span class="suite"><em>St #401</em></span><br />
-                        <span class="locality">Minneapolis</span>, 
-                        <span class="region">MN</span>
-                        <span class="postal-code">55415</span>
-                        <span class="country-name">USA</span>
-                    </address>
-                    <!-- <div class="tel">
-                        <span class="type">Phone</span>
-                        <span class="value">(707) 546-5448 ext: 101</span>
-                    </div> -->
-            </div>
-        </div>
-
-        <div id="contact-form">
-            <article id="item-id-11" class="form-container" about="/contact/lets-get-started" typeof="sioc:Item foaf:Document">
-                <header>
-                    <h2>Let&#039;s get started.</h2>
-                </header>
-                <div class="content">
-                    <form accept-charset="UTF-8" action="https://formkeep.com/f/c4cb9ba784b0" method="POST">
-                        <div>
-                            <input type="hidden" name="utf8" value="✓">
-                            <div class="form-item"><input type="text" name="name" placeholder="Name *" /> <input type="email" name="email" placeholder="Email *" /></div>
-                            <!-- <div class="form-item"><input type="email" name="email" placeholder="Email *" /></div> -->
-                            <div class="form-item-block"><textarea name="message" placeholder="message *"></textarea></div>
-                            <div class="form-actions"><input type="submit" value="Submit" /></input></div>
-                        </div>
-                    </form>
+        <main>
+            <div id="intro" class="intro">
+                <div class="flex-wrap-center-middle container">
+                    <p>As we grow, change, learn and seek ourselves to constantly improve, so too must our brand reflect that. No clinging to the comfort of the past. We must push forward. We must evolve. Which brings us here, to the verge of an exhilarating new chapter of The Engine, eagerly awaiting the future and exploring the limits of what lies ahead.</p>
                 </div>
-            </article>
-        </div>
-    </div><!--End Contact Content-->
-
-</div>
-
-<footer role="contentinfo">
-    <div class="container">
-                        
-        <div class="extended">
-            <h3>The Engine is On</h3>
-            <ul>
-                <li class="facebook"><a href="https://www.facebook.com/TheEngineIsRed" target="_blank"><img src="http://res.cloudinary.com/the-engine-is-red/image/upload/v1449160675/engine-site/fb_icon.svg" alt="The Engine is on Facebook" /></a></li>
-                <li class="linkedin"><a href="http://www.linkedin.com/company/the-engine-is-red" target="_blank"><img src="http://res.cloudinary.com/the-engine-is-red/image/upload/v1449160674/engine-site/li_icon.svg" alt="The Engine is on Linkedin" /></a></li>
-                <li class="blog"><a href="http://blog.theengineisred.com/" target="_blank"><img src="http://res.cloudinary.com/the-engine-is-red/image/upload/v1449160675/engine-site/blog_icon.svg" alt="Read The Engine Blog" /></a></li>
-            </ul>
-        </div>
-            
-        <p class="copyright">
-            401 Mendocino Ave Suite 100 | Santa Rosa, California 
-            <span class="divider">|</span> 
-            95401<br />
-            400 S 4th St #401 | Minneapolis, MN | 55415<br /> &copy; 2015 The Engine is Red <span class="divider">|</span> 
-            All Rights Reserved
-        </p>
-    </div>  
-</footer>
-
-    </div><!-- /#page-wrapper -->
-    <script src="/slick/slick.min.js"></script>
-  </body>
+            </div>
+            <div id="form" class="form primary1-block base1-text large-padding flex-column-center-middle">
+                <h3 class="center-text">Contact Us</h3>
+                <form class="medium-padding flex-wrap-center-middle container" accept-charset="UTF-8" action="https://formkeep.com/f/c4cb9ba784b0" method="POST">
+                    <input required type="hidden" name="utf8" value="✓">
+                    <div class="form-item half gutter">
+                        <input required type="text" name="name" placeholder="Name">
+                    </div>
+                    <div class="form-item half gutter">
+                        <input class="half gutter" type="text" name="company" placeholder="Company">
+                    </div>
+                    <div class="form-item half gutter">
+                        <input class="half gutter" required type="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-item half gutter">
+                        <input class="half gutter" type="phone" name="phone" placeholder="Phone">
+                    </div>
+                    <!-- <textarea required name="message" placeholder="message *"></textarea> -->
+                    <div class="form-actions submit flex-center-middle">
+                        <input type="submit" value="Submit" name="Submit">
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <h3 class="center-text">The Engine is Red</h3>
+            <div class="three-quarters flex-wrap-left-middle center-text">
+                <div class="quarter no-margin">
+                    <p class="three-quarters">
+                        <a href="https://goo.gl/maps/tXbcMgrCPGE2"><img class="map-marker" src="/images/map-marker.svg" alt="" aria-hidden="true"></a><br>
+                        SANTA ROSA<br>
+                        401 mendocino ave<br>
+                        suite 100<br>
+                        <a class="secondary1-text" href="tel:7075465448">707 546 5448</a>
+                    </p>
+                </div>
+                <div class="quarter no-margin">
+                    <p class="three-quarters">
+                        <a href="https://goo.gl/maps/FevMfCkcaxx"><img class="map-marker" src="/images/map-marker.svg" alt="" aria-hidden="true"></a><br>
+                        MINNEAPOLIS<br>
+                        711 hennepin ave<br>
+                        suite 500<br>
+                        <a class="secondary1-text" href="tel:7075465448">707 546 5448</a>
+                    </p>
+                </div>
+                <div class="quarter no-margin">
+                    <div class="three-quarters _half flex-wrap-center">
+                        <div class="social _third no-margin gutter">
+                            <a href="https://www.facebook.com/TheEngineIsRed/?fref=ts"><img src="/images/facebook.svg" alt="The Engine is Facebook"></a>
+                        </div>
+                        <div class="social _third no-margin gutter">
+                            <a href="https://www.instagram.com/theengineisred/?hl=en"><img src="/images/instagram.svg" alt="The Engine is Instagram"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="the-engine-is-r">
+                <img src="/images/the-engine-is-r.svg" alt="" aria-hidden="true">
+            </div>
+            <div class="red">
+                <img src="/images/red.svg" alt="" aria-hidden="true">
+            </div>
+        </footer>
+    </body>
 </html>
